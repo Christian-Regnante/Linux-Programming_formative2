@@ -1,0 +1,4 @@
+Perfect numbers found: 6 28 496 8128
+The synchronized total number of perfect numbers between 1 and 100000 is 4
+Single-threaded time: 0.244898721 seconds
+Multi-threaded time:  0.160008149 seconds
