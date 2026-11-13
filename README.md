@@ -11,8 +11,6 @@ Each question is isolated in its own directory:
 - `Question3/` — single-threaded and eight-thread perfect-number search.
 - `Question4/` — mutex-protected worker-pool log scanner.
 
-Final analytical reports are written as `.docx` files in the relevant question directory. Generated binaries, traces, benchmark data, and large input files should remain question-local.
-
 ## Compile
 
 ```sh
@@ -52,16 +50,3 @@ cd Question2
 ./benchmark.sh big.bin benchmark-data
 ```
 
-See `IMPLEMENTATION_PLAN.md` for the acceptance checks and required report contents.
-
-## Generate reports
-
-After collecting the evidence with the question-local scripts, create or refresh all four analytical reports with:
-
-```sh
-python3 -m venv /tmp/formative-report-venv
-/tmp/formative-report-venv/bin/pip install python-docx
-/tmp/formative-report-venv/bin/python generate_reports.py
-```
-
-The generated files are `Question1/report.docx` through `Question4/report.docx`.
