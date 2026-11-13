@@ -33,7 +33,26 @@ gcc -Wall -Wextra -Wpedantic -std=c11 -O2 -pthread -o Question4/logscan Question
 (cd Question4 && ./logscan pattern report.txt 4 file1.log file2.log)
 ```
 
-The reproducible trace and benchmark workflows are in the scripts within the corresponding question directory. See `IMPLEMENTATION_PLAN.md` for the acceptance checks and required report contents.
+## Reproducibility scripts
+
+The question directories contain shell scripts that automate the required evidence collection:
+
+| Script | Purpose |
+|---|---|
+| `Question1/run_trace.sh` | Compiles the pipeline and captures full and filtered `strace` logs. |
+| `Question2/benchmark.sh` | Generates the 100 MiB input when needed, runs all buffer-size repetitions, verifies copies with `cmp`, and captures `strace -c` summaries. |
+| `Question3/run_check.sh` | Compiles and runs the perfect-number program for a focused correctness check. |
+| `Question4/generate_logs.sh` | Generates twelve differently sized log files containing the benchmark pattern. |
+| `Question4/benchmark.sh` | Runs the 1-, 2-, 4-, and 8-thread tests three times and records timing and `grep` verification data. |
+
+Run scripts from their own question directory, for example:
+
+```sh
+cd Question2
+./benchmark.sh big.bin benchmark-data
+```
+
+See `IMPLEMENTATION_PLAN.md` for the acceptance checks and required report contents.
 
 ## Generate reports
 
