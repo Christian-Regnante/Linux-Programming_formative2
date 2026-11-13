@@ -34,3 +34,15 @@ gcc -Wall -Wextra -Wpedantic -std=c11 -O2 -pthread -o Question4/logscan Question
 ```
 
 The reproducible trace and benchmark workflows are in the scripts within the corresponding question directory. See `IMPLEMENTATION_PLAN.md` for the acceptance checks and required report contents.
+
+## Generate reports
+
+After collecting the evidence with the question-local scripts, create or refresh all four analytical reports with:
+
+```sh
+python3 -m venv /tmp/formative-report-venv
+/tmp/formative-report-venv/bin/pip install python-docx
+/tmp/formative-report-venv/bin/python generate_reports.py
+```
+
+The generated files are `Question1/report.docx` through `Question4/report.docx`.
