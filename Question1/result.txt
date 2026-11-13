@@ -1,3 +1,4 @@
-/usr/bin/bash
-/usr/bin/git-shell
-/usr/bin/nologin
+/bin/bash
+/bin/false
+/bin/sync
+/usr/sbin/nologin
