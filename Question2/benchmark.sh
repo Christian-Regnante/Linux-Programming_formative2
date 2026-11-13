@@ -27,7 +27,10 @@ for buffer_size in 512 4096 65536; do
     done
 done
 
-strace -c ./copy_sys "$input" "$output_dir/strace-sys.bin" 4096 \
-    2> "$output_dir/strace-copy-sys.txt"
-strace -c ./copy_stdio "$input" "$output_dir/strace-stdio.bin" 4096 \
-    2> "$output_dir/strace-copy-stdio.txt"
+for buffer_size in 512 4096 65536; do
+    strace -c ./copy_sys "$input" "$output_dir/strace-sys-${buffer_size}.bin" \
+        "$buffer_size" 2> "$output_dir/strace-copy-sys-${buffer_size}.txt"
+    strace -c ./copy_stdio "$input" \
+        "$output_dir/strace-stdio-${buffer_size}.bin" "$buffer_size" \
+        2> "$output_dir/strace-copy-stdio-${buffer_size}.txt"
+done

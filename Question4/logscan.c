@@ -42,11 +42,10 @@ static int scan_file(const char *pattern, const char *path,
         perror(path);
         return -1;
     }
-    char *line = NULL;
-    size_t capacity = 0;
+    char line[8192];
     size_t matches = 0;
     size_t total = 0;
-    while (getline(&line, &capacity, file) != -1) {
+    while (fgets(line, sizeof(line), file) != NULL) {
         ++total;
         if (strstr(line, pattern) != NULL) {
             ++matches;
@@ -56,7 +55,6 @@ static int scan_file(const char *pattern, const char *path,
     if (failed) {
         perror(path);
     }
-    free(line);
     if (fclose(file) == EOF) {
         perror(path);
         failed = 1;
