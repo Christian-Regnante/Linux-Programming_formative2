@@ -1,0 +1,14 @@
+/usr/bin/bash
+/usr/bin/git-shell
+/usr/bin/nologin
+Total lines: 3
+Child 81114 exited with status 0
+Child 81116 exited with status 0
+Child 81117 exited with status 0
+/usr/bin/bash
+/usr/bin/git-shell
+/usr/bin/nologin
+Total lines: 3
+Child 81127 exited with status 0
+Child 81128 exited with status 0
+Child 81129 exited with status 0

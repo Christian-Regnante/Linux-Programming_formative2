@@ -1,0 +1,237 @@
+81125 execve("./pipeline", ["./pipeline"], 0x7ffe62582168 /* 227 vars */) = 0
+81125 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+81125 close(3)                          = 0
+81125 openat(AT_FDCWD, "/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+81125 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300y\2\0\0\0\0\0"..., 1024) = 1024
+81125 close(3)                          = 0
+81125 pipe2([3, 4], 0)                  = 0
+81125 pipe2([5, 6], 0)                  = 0
+81125 pipe2([7, 8], 0)                  = 0
+81125 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f33f3571a10) = 81127
+81125 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+81127 dup2(0, 0)                        = 0
+81127 dup2(4, 1)                        = 1
+81125 <... clone resumed>, child_tidptr=0x7f33f3571a10) = 81128
+81127 close(3)                          = 0
+81127 close(4)                          = 0
+81127 close(5)                          = 0
+81127 close(6)                          = 0
+81127 close(7)                          = 0
+81127 close(8)                          = 0
+81127 execve("/home/_regnante_/.local/share/mise/installs/claude/latest/cat", ["cat", "/etc/passwd"], 0x7ffff44df768 /* 227 vars */) = -1 ENOENT (No such file or directory)
+81127 execve("/home/_regnante_/.local/share/mise/installs/codex/latest/bin/cat", ["cat", "/etc/passwd"], 0x7ffff44df768 /* 227 vars */) = -1 ENOENT (No such file or directory)
+81127 execve("/home/_regnante_/.local/share/mise/installs/copilot/latest/cat", ["cat", "/etc/passwd"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81128 dup2(3, 0 <unfinished ...>
+81127 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81125 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+81128 <... dup2 resumed>)               = 0
+81127 execve("/home/_regnante_/.local/share/mise/installs/gemini/latest/node_modules/.bin/cat", ["cat", "/etc/passwd"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81128 dup2(6, 1 <unfinished ...>
+81127 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81128 <... dup2 resumed>)               = 1
+81127 execve("/home/_regnante_/.local/share/mise/installs/gh/latest/gh_2.101.0_linux_amd64/bin/cat", ["cat", "/etc/passwd"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81128 close(3)                          = 0
+81127 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81125 <... clone resumed>, child_tidptr=0x7f33f3571a10) = 81129
+81128 close(4 <unfinished ...>
+81127 execve("/home/_regnante_/.local/share/mise/installs/node/26.8.1/bin/cat", ["cat", "/etc/passwd"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81128 <... close resumed>)              = 0
+81125 close(3 <unfinished ...>
+81127 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81125 <... close resumed>)              = 0
+81128 close(5 <unfinished ...>
+81125 close(4 <unfinished ...>
+81129 dup2(5, 0 <unfinished ...>
+81125 <... close resumed>)              = 0
+81128 <... close resumed>)              = 0
+81127 execve("/home/_regnante_/.local/share/mise/shims/cat", ["cat", "/etc/passwd"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81125 close(5 <unfinished ...>
+81129 <... dup2 resumed>)               = 0
+81128 close(6 <unfinished ...>
+81125 <... close resumed>)              = 0
+81129 dup2(8, 1 <unfinished ...>
+81127 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81125 close(6 <unfinished ...>
+81129 <... dup2 resumed>)               = 1
+81128 <... close resumed>)              = 0
+81125 <... close resumed>)              = 0
+81129 close(3 <unfinished ...>
+81127 execve("/home/_regnante_/.local/bin/cat", ["cat", "/etc/passwd"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81125 close(8 <unfinished ...>
+81129 <... close resumed>)              = 0
+81128 close(7 <unfinished ...>
+81125 <... close resumed>)              = 0
+81129 close(4 <unfinished ...>
+81127 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81125 openat(AT_FDCWD, "result.txt", O_WRONLY|O_CREAT|O_TRUNC, 0644 <unfinished ...>
+81129 <... close resumed>)              = 0
+81128 <... close resumed>)              = 0
+81129 close(5 <unfinished ...>
+81127 execve("/usr/share/omarchy/bin/cat", ["cat", "/etc/passwd"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81125 <... openat resumed>)             = 3
+81129 <... close resumed>)              = 0
+81128 close(8 <unfinished ...>
+81125 read(7 <unfinished ...>
+81129 close(6 <unfinished ...>
+81127 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81129 <... close resumed>)              = 0
+81128 <... close resumed>)              = 0
+81129 close(7 <unfinished ...>
+81127 execve("/usr/local/sbin/cat", ["cat", "/etc/passwd"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81129 <... close resumed>)              = 0
+81128 execve("/home/_regnante_/.local/share/mise/installs/claude/latest/cut", ["cut", "-d:", "-f7"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81129 close(8 <unfinished ...>
+81127 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81129 <... close resumed>)              = 0
+81128 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81127 execve("/usr/local/bin/cat", ["cat", "/etc/passwd"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81129 execve("/home/_regnante_/.local/share/mise/installs/claude/latest/sort", ["sort", "-u"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81128 execve("/home/_regnante_/.local/share/mise/installs/codex/latest/bin/cut", ["cut", "-d:", "-f7"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81127 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81129 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81128 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81129 execve("/home/_regnante_/.local/share/mise/installs/codex/latest/bin/sort", ["sort", "-u"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81127 execve("/usr/bin/cat", ["cat", "/etc/passwd"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81129 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81128 execve("/home/_regnante_/.local/share/mise/installs/copilot/latest/cut", ["cut", "-d:", "-f7"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81129 execve("/home/_regnante_/.local/share/mise/installs/copilot/latest/sort", ["sort", "-u"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81127 <... execve resumed>)             = 0
+81127 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+81127 close(3)                          = 0
+81127 openat(AT_FDCWD, "/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+81127 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300y\2\0\0\0\0\0"..., 1024) = 1024
+81129 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81128 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81127 close(3 <unfinished ...>
+81129 execve("/home/_regnante_/.local/share/mise/installs/gemini/latest/node_modules/.bin/sort", ["sort", "-u"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81128 execve("/home/_regnante_/.local/share/mise/installs/gemini/latest/node_modules/.bin/cut", ["cut", "-d:", "-f7"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81129 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81128 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81129 execve("/home/_regnante_/.local/share/mise/installs/gh/latest/gh_2.101.0_linux_amd64/bin/sort", ["sort", "-u"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81128 execve("/home/_regnante_/.local/share/mise/installs/gh/latest/gh_2.101.0_linux_amd64/bin/cut", ["cut", "-d:", "-f7"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81129 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81128 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81129 execve("/home/_regnante_/.local/share/mise/installs/node/26.8.1/bin/sort", ["sort", "-u"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81128 execve("/home/_regnante_/.local/share/mise/installs/node/26.8.1/bin/cut", ["cut", "-d:", "-f7"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81129 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81128 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81129 execve("/home/_regnante_/.local/share/mise/shims/sort", ["sort", "-u"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81128 execve("/home/_regnante_/.local/share/mise/shims/cut", ["cut", "-d:", "-f7"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81129 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81128 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81129 execve("/home/_regnante_/.local/bin/sort", ["sort", "-u"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81128 execve("/home/_regnante_/.local/bin/cut", ["cut", "-d:", "-f7"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81129 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81128 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81129 execve("/usr/share/omarchy/bin/sort", ["sort", "-u"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81128 execve("/usr/share/omarchy/bin/cut", ["cut", "-d:", "-f7"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81129 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81128 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81129 execve("/usr/local/sbin/sort", ["sort", "-u"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81128 execve("/usr/local/sbin/cut", ["cut", "-d:", "-f7"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81129 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81128 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81129 execve("/usr/local/bin/sort", ["sort", "-u"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81128 execve("/usr/local/bin/cut", ["cut", "-d:", "-f7"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81129 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81128 <... execve resumed>)             = -1 ENOENT (No such file or directory)
+81129 execve("/usr/bin/sort", ["sort", "-u"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81128 execve("/usr/bin/cut", ["cut", "-d:", "-f7"], 0x7ffff44df768 /* 227 vars */ <unfinished ...>
+81127 <... close resumed>)              = 0
+81128 <... execve resumed>)             = 0
+81128 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+81127 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC <unfinished ...>
+81128 close(3 <unfinished ...>
+81127 <... openat resumed>)             = 3
+81128 <... close resumed>)              = 0
+81127 close(3)                          = 0
+81129 <... execve resumed>)             = 0
+81127 openat(AT_FDCWD, "/etc/passwd", O_RDONLY) = 3
+81129 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+81127 read(3 <unfinished ...>
+81129 close(3 <unfinished ...>
+81128 openat(AT_FDCWD, "/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+81127 <... read resumed>, "root:x:0:0::/root:/usr/bin/bash\n"..., 262144) = 1676
+81129 <... close resumed>)              = 0
+81128 <... openat resumed>)             = 3
+81127 write(1, "root:x:0:0::/root:/usr/bin/bash\n"..., 1676 <unfinished ...>
+81128 read(3 <unfinished ...>
+81127 <... write resumed>)              = 1676
+81128 <... read resumed>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300y\2\0\0\0\0\0"..., 1024) = 1024
+81127 read(3, "", 262144)               = 0
+81127 close(3)                          = 0
+81129 openat(AT_FDCWD, "/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+81127 close(1 <unfinished ...>
+81129 read(3 <unfinished ...>
+81127 <... close resumed>)              = 0
+81129 <... read resumed>, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300y\2\0\0\0\0\0"..., 1024) = 1024
+81127 close(2)                          = 0
+81128 close(3)                          = 0
+81127 +++ exited with 0 +++
+81129 close(3)                          = 0
+81125 <... read resumed>, 0x7ffff44dd5e0, 4096) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+81125 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=81127, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+81125 read(7 <unfinished ...>
+81128 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+81128 close(3)                          = 0
+81128 read(0, "root:x:0:0::/root:/usr/bin/bash\n"..., 262144) = 1676
+81129 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+81128 read(0 <unfinished ...>
+81129 close(3)                          = 0
+81128 <... read resumed>, "", 262144)   = 0
+81128 close(0)                          = 0
+81128 write(1, "/usr/bin/bash\n/usr/bin/nologin\n/"..., 489) = 489
+81128 close(1)                          = 0
+81128 close(2)                          = 0
+81128 +++ exited with 0 +++
+81125 <... read resumed>, 0x7ffff44dd5e0, 4096) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+81129 openat(AT_FDCWD, "/proc/self/cgroup", O_RDONLY) = 3
+81129 read(3, "0::/user.slice/user-1000.slice/u"..., 1024) = 100
+81129 close(3)                          = 0
+81125 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=81128, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+81129 openat(AT_FDCWD, "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-ghostty-surface-transient-6393.scope/cpu.max", O_RDONLY <unfinished ...>
+81125 read(7 <unfinished ...>
+81129 <... openat resumed>)             = -1 ENOENT (No such file or directory)
+81129 openat(AT_FDCWD, "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/cpu.max", O_RDONLY) = 3
+81129 read(3, "max 100000\n", 4096)     = 11
+81129 close(3)                          = 0
+81129 openat(AT_FDCWD, "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/cpu.max", O_RDONLY) = 3
+81129 read(3, "max 100000\n", 4096)     = 11
+81129 close(3)                          = 0
+81129 openat(AT_FDCWD, "/sys/fs/cgroup/user.slice/user-1000.slice/cpu.max", O_RDONLY) = 3
+81129 read(3, "max 100000\n", 4096)     = 11
+81129 close(3)                          = 0
+81129 openat(AT_FDCWD, "/sys/fs/cgroup/user.slice/cpu.max", O_RDONLY) = 3
+81129 read(3, "max 100000\n", 4096)     = 11
+81129 close(3)                          = 0
+81129 openat(AT_FDCWD, "/sys/fs/cgroup//cpu.max", O_RDONLY) = -1 ENOENT (No such file or directory)
+81129 read(0, "/usr/bin/bash\n/usr/bin/nologin\n/"..., 131072) = 489
+81129 read(0, "", 126976)               = 0
+81129 write(1, "/usr/bin/bash\n/usr/bin/git-shell"..., 50 <unfinished ...>
+81125 <... read resumed>, "/usr/bin/bash\n/usr/bin/git-shell"..., 4096) = 50
+81129 <... write resumed>)              = 50
+81125 write(3, "/usr/bin/bash\n/usr/bin/git-shell"..., 50) = 50
+81125 read(7 <unfinished ...>
+81129 close(0)                          = 0
+81129 close(1 <unfinished ...>
+81125 <... read resumed>, "", 4096)     = 0
+81129 <... close resumed>)              = 0
+81125 close(7 <unfinished ...>
+81129 close(2 <unfinished ...>
+81125 <... close resumed>)              = 0
+81129 <... close resumed>)              = 0
+81125 close(3)                          = 0
+81125 openat(AT_FDCWD, "result.txt", O_RDONLY) = 3
+81125 read(3, "/usr/bin/bash\n/usr/bin/git-shell"..., 4096) = 50
+81129 +++ exited with 0 +++
+81125 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=81129, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+81125 write(1, "/usr/bin/bash\n", 14)   = 14
+81125 write(1, "/usr/bin/git-shell\n", 19) = 19
+81125 write(1, "/usr/bin/nologin\n", 17) = 17
+81125 read(3, "", 4096)                 = 0
+81125 close(3)                          = 0
+81125 wait4(81127, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 81127
+81125 wait4(81128, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 81128
+81125 wait4(81129, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 81129
+81125 write(1, "Total lines: 3\nChild 81127 exite"..., 114) = 114
+81125 +++ exited with 0 +++
